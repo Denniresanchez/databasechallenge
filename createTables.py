@@ -36,8 +36,7 @@ try:
             """CREATE TABLE accounts (
 			user_id SERIAL NOT NULL PRIMARY KEY,
             username text NOT NULL,
-			user_pass text NOT NULL,
-            user_class text)"""
+			user_pass text NOT NULL
 		)
         conn.commit()
 

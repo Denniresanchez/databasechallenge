@@ -17,13 +17,32 @@ try:
         cursor.execute(
             """CREATE TABLE houses (
 			house_id int primary key NOT NULL,
-			house_tag text NOT NULL,
+			house_location text NOT NULL,
+            house_area text,
 			house_selling_price int,
             house_purchase_price int,
-            house_spread int)"""
+            house_owner text)"""
 		)
         conn.commit()
-        
+
+        cursor.execute(
+            """CREATE TABLE transactions (
+			house_id int primary key NOT NULL,
+			house_selling_price int)"""
+		)
+        conn.commit()
+
+        cursor.execute(
+            """CREATE TABLE accounts (
+			user_id int primary key NOT NULL,
+            username text NOT NULL,
+			user_pass text NOT NULL,
+            user_class text)"""
+		)
+        conn.commit()
+
+        cursor.close()
+
     createTables()
         
 

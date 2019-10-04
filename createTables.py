@@ -16,7 +16,7 @@ try:
         # create houses table
         cursor.execute(
             """CREATE TABLE houses (
-			house_id int primary key NOT NULL,
+			house_id SERIAL NOT NULL PRIMARY KEY,
 			house_location text NOT NULL,
             house_area text,
 			house_selling_price int,
@@ -34,7 +34,7 @@ try:
 
         cursor.execute(
             """CREATE TABLE accounts (
-			user_id int primary key NOT NULL,
+			user_id SERIAL NOT NULL PRIMARY KEY,
             username text NOT NULL,
 			user_pass text NOT NULL,
             user_class text)"""

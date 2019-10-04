@@ -18,9 +18,9 @@ try:
             """CREATE TABLE houses (
 			house_id int primary key NOT NULL,
 			house_tag text NOT NULL,
-			house_selling_price int NOT NULL,
-            house_purchase_price int NOT NULL,
-            house_spread int NOT NULL)"""
+			house_selling_price int,
+            house_purchase_price int,
+            house_spread int)"""
 		)
         conn.commit()
         

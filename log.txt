@@ -1,0 +1,2 @@
+User john loged in at 2019-10-04 15:33:34.423873
+Some tried to login using this username 'sdfs' at 2019-10-04 15:33:37.070359
